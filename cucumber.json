@@ -1,0 +1,415 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 9,
+        "name": "validate delete product api status code works correctly",
+        "description": "",
+        "id": "delete-product-using-delete-api;validate-delete-product-api-status-code-works-correctly;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "I hit the url of delete product api endpoint",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "I pass the url of delete products in the request with \"5\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I receive the response code as 200",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "delete product using DELETE API",
+    "description": "",
+    "id": "delete-product-using-delete-api",
+    "keyword": "Feature",
+    "uri": "DeleteProduct.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validation of positive response code for Get Animals from the application",
+        "description": "",
+        "id": "getting-animals-from-the-get-api;validation-of-positive-response-code-for-get-animals-from-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "i am an authenticated user",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "i hit the get animals api url",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "i get 200 as the response code",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Validation of positive response body for Get Animals from the application",
+        "description": "",
+        "id": "getting-animals-from-the-get-api;validation-of-positive-response-body-for-get-animals-from-the-application;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "i am an authenticated user",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "i hit the get animals api url",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "i get animals in the response body of the api validate the value of \"Dog\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Validation of negative response code for Get Animals from the application",
+        "description": "",
+        "id": "getting-animals-from-the-get-api;validation-of-negative-response-code-for-get-animals-from-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "i am an unauthenticated user",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "i get 401 as the response code",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Getting animals from the get Api",
+    "description": "",
+    "id": "getting-animals-from-the-get-api",
+    "keyword": "Feature",
+    "uri": "GetAnimals.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 9,
+        "name": "validate put product api status code works correctly",
+        "description": "",
+        "id": "update-products-using-put-api;validate-put-product-api-status-code-works-correctly;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "I hit the url of put product api endpoint",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "I pass the url of products in the request with \"6\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I receive the response code as 200",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "update products using PUT API",
+    "description": "",
+    "id": "update-products-using-put-api",
+    "keyword": "Feature",
+    "uri": "UpdateProduct.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verify the api for the products",
+        "description": "",
+        "id": "get-all-products-from-api;verify-the-api-for-the-products",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "I hit the url to get the products api endpoint",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "I pass the url in the request",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I receive the response code as 200",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Verify the rate of the first product is correct",
+        "description": "",
+        "id": "get-all-products-from-api;verify-the-rate-of-the-first-product-is-correct;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I hit the url to get the products api endpoint",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "I pass the url in the request",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "I verify that the rate of the first product is \"3.9\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Get all products from api",
+    "description": "",
+    "id": "get-all-products-from-api",
+    "keyword": "Feature",
+    "uri": "getProducts.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Validate post product api works correctly",
+        "description": "",
+        "id": "insert-a-products-using-post-method-api;validate-post-product-api-works-correctly;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "I hit the url to post the products api endpoint",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I pass the url in the request",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "I pass the request body of product title \"Anak ng kumander\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "I receive the response code as 200",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Validate post product api response body",
+        "description": "",
+        "id": "insert-a-products-using-post-method-api;validate-post-product-api-response-body;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "I hit the url to post the products api endpoint",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "I pass the url in the request",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "I pass the request body of product title \"Anak ng kumander\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "I receive the response body with as a \"21\"",
+            "match": {},
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "insert a products using Post method API",
+    "description": "",
+    "id": "insert-a-products-using-post-method-api",
+    "keyword": "Feature",
+    "uri": "insertProduct.feature"
+  }
+]
