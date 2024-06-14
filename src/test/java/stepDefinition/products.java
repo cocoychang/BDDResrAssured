@@ -26,7 +26,6 @@ public class products  {
     public int ResponseCode;
     public ResponseBody body;
     public JSONObject requestParams;
-    public JsonPath jsnpath;
     public String ObjValue;
 
 //    static ExtentReports report;
