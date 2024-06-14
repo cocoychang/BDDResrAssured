@@ -218,6 +218,264 @@
     "line": 1,
     "elements": [
       {
+        "line": 9,
+        "name": "Validate that able to get the list of book",
+        "description": "",
+        "id": "getting-the-list-and-order-from-book;validate-that-able-to-get-the-list-of-book;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "I hit the url to get the list endpoint",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "I pass the url in the request with type \"fiction\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "Received the response body with list of books and 200 status code",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Validate that api able to get single book",
+        "description": "",
+        "id": "getting-the-list-and-order-from-book;validate-that-api-able-to-get-single-book;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "I hit the url to get the list endpoint",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I pass the url in the request with bookId of \"4\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "Received the response body with single book has current stock and 200 status code",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Validate that api able to get single book",
+        "description": "",
+        "id": "getting-the-list-and-order-from-book;validate-that-api-able-to-get-single-book;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "I hit the url to get the list endpoint",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I pass the url in the request with bookId of \"1\"",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "Received the response body with single book has current stock and 200 status code",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Validate that api able to generate auth token thru endpoint",
+        "description": "",
+        "id": "getting-the-list-and-order-from-book;validate-that-api-able-to-generate-auth-token-thru-endpoint;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "I hit the url to get the list endpoint",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "I pass the url the api authentication endpoint",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "I pass the response body with client name \"cocoy28\" and email address \"c28@gmail.com\"",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "Received the response body with authenticationToken and 201 status code",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Validate that api able to submit order thru endpoint",
+        "description": "",
+        "id": "getting-the-list-and-order-from-book;validate-that-api-able-to-submit-order-thru-endpoint;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "that user has authentication",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "Trigger endpoint with auth token and for orders request body with \"4\" and \"cocoy\"",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "Received the response body with successfully created order and 201 status code",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "Validate that the api able to get all orders",
+        "description": "",
+        "id": "getting-the-list-and-order-from-book;validate-that-the-api-able-to-get-all-orders",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "that user has authentication",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 38,
+            "name": "Trigger the url with endpoint of get orders",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 39,
+            "name": "Received response with all orders and 200 status code",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Getting the list and order from book",
+    "description": "",
+    "id": "getting-the-list-and-order-from-book",
+    "keyword": "Feature",
+    "uri": "book.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
         "line": 3,
         "name": "Verify the api for the products",
         "description": "",
